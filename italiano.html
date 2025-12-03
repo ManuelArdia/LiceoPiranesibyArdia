@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Italiano – Liceo Scientifico Scienze Applicate</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: #fff4e6;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* ==================== HEADER ==================== */
+        header {
+            background: linear-gradient(45deg, #FFA65C, #FF8C42);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.7em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* ==================== HERO BAR ==================== */
+.hero {
+    background: linear-gradient(90deg, #FFA65C, #FF8C42);
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+    gap: 15px;
+}
+
+.hero-icon {
+    font-size: 2em;
+}
+
+        /* ==================== NAVBAR ==================== */
+        nav {
+            background: #FFA65C;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 7px 14px;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            border-radius: 5px;
+            display: inline-block;
+            transition: transform 0.2s ease, background 0.25s, box-shadow 0.25s;
+        }
+
+        nav a:hover {
+            background: #FF8C42;
+            transform: scale(1.12);
+            color: white;
+            box-shadow: 0 0 6px rgba(0,0,0,.25);
+        }
+
+        nav a.active {
+            background: #E6731F;
+            color: white;
+            transform: scale(1.12);
+            box-shadow: 0 0 6px rgba(0,0,0,.3);
+        }
+
+        /* ==================== TOP LAYOUT ==================== */
+.top-container {
+    display: grid;
+    grid-template-columns: 380px 1fr 380px;
+    gap: 80px;
+    max-width: 1700px;
+    margin: 40px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.side-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-box {
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 50px;
+}
+
+.media-box video {
+    width: 100%;
+    border: 4px solid #FFB47C;
+    border-radius: 10px;
+}
+
+.media-box img {
+    width: 100%;
+    border: 4px solid #005F8C; /* stesso bordo dei video */
+    border-radius: 10px;
+    display: block; /* evita spazi indesiderati sotto l'immagine */
+}
+
+.media-desc {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #803300;
+}
+
+/* ==================== TABELLA ==================== */
+table {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    background: white;
+    border-collapse: collapse;
+    border: 3px solid #FFB47C;
+    box-shadow: 0 0 15px rgba(255,180,124,.25);
+    font-size: 1.15em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+th {
+    background: #FF8C42;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 2px solid #FFB47C;
+    padding: 9px;
+    font-size: 0.94em;
+}
+
+td:nth-child(1), td:nth-child(2) {
+    background: #FFD1A3;
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+}
+
+.italiano1::before { content: "📚 "; }
+.italiano2::before { content: "🖋️ "; }
+.italiano3::before { content: "📖 "; }
+.italiano4::before { content: "📝 "; }
+.italiano5::before { content: "📚 "; }
+.italiano::before { content: "📚 "; }
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: #FF8C42;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Italiano</h1>
+    <p>Liceo Scientifico – Scienze Applicate</p>
+</header>
+
+<div class="hero">
+    <span class="hero-icon">📚</span>
+    Esplorare lingua e letteratura per comunicare e pensare criticamente.
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="arte.html">Arte</a>
+    <a href="filosofia.html">Filosofia</a>
+    <a href="fisica.html">Fisica</a>
+    <a href="matematica.html">Matematica</a>
+    <a href="italiano.html" class="active">Italiano</a>
+    <a href="inglese.html">Inglese</a>
+    <a href="storia.html">Storia</a>
+    <a href="scienze.html">Scienze Naturali</a>
+    <a href="informatica.html">Informatica</a>
+    <a href="motorie.html">Scienze Motorie</a>
+    <a href="religione.html">Religione</a>
+    <a href="diritto.html">Diritto ed Economia</a>
+</nav>
+
+<div class="top-container">
+
+    <!-- ===== COLONNA SINISTRA ===== -->
+    <div class="side-column">
+<h3 class="column-title">OPERE DELLA LETTERARATURA</h3>
+
+<div class="media-box">
+    <img src="DivinaCommedia.jpg" alt="DivinaCommedia">
+    <div class="media-desc">Divina Commedia</div>
+</div>
+
+<div class="media-box">
+    <img src="IPS.jpg" alt="IPS">
+    <div class="media-desc">I Promessi Sposi</div>
+</div>
+
+<div class="media-box">
+    <img src="Achille.jpg" alt="Achille">
+    <div class="media-desc">Epica, Achille</div>
+</div>
+
+    </div>
+
+    <!-- ===== TABELLA CENTRALE ===== -->
+    <table>
+        <tr><th>Anno</th><th>Ore</th><th>Programma</th></tr>
+
+        <tr>
+            <td>I</td><td>2</td>
+            <td>
+                <span class="italiano1">Italiano</span>
+                <ul>
+                    <li>Introduzione alla grammatica e alla comprensione dei testi brevi, esercizi pratici.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>II</td><td>2</td>
+            <td>
+                <span class="italiano2">Italiano</span>
+                <ul>
+                    <li>Analisi di testi letterari, produzione scritta guidata, comprensione e sintesi di contenuti.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>III</td><td>3</td>
+            <td>
+                <span class="italiano3">Italiano</span>
+                <ul>
+                    <li>Studio approfondito della letteratura italiana, lettura critica e interpretativa, produzione di testi personali.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>IV</td><td>3</td>
+            <td>
+                <span class="italiano4">Italiano</span>
+                <ul>
+                    <li>Analisi stilistica e testuale, composizione di saggi e relazioni critiche, approfondimenti su autori classici e contemporanei.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>V</td><td>3</td>
+            <td>
+                <span class="italiano5">Italiano</span>
+                <ul>
+                    <li>Preparazione agli esami, approfondimento letterario e linguistico, produzione di progetti e presentazioni scritte.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- ===== COLONNA DESTRA ===== -->
+    <div class="side-column">
+<h3 class="column-title">TRE CORONE FIORENTINE</h3>
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="Dante.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Dante Alighieri</div>
+        </div>
+
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="Petrarca.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Francesco Petrarca</div>
+        </div>
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="Boccaccio.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Giovanni Boccaccio</div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 IIS “IPSAR Piranesi” – Liceo Scientifico Scienze Applicate
+</footer>
+
+</body>
+</html>
+
+

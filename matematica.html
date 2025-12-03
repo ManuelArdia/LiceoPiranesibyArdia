@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Matematica – Liceo Scientifico Scienze Applicate</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: #e6f3fb;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* ==================== HEADER ==================== */
+        header {
+            background: linear-gradient(45deg, #3A8DFF, #0D6EFD);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.7em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* ==================== HERO BAR ==================== */
+.hero {
+    background: linear-gradient(90deg, #3A8DFF, #0D6EFD);
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+    gap: 15px;
+}
+
+.hero-icon {
+    font-size: 2em;
+}
+
+        /* ==================== NAVBAR ==================== */
+        nav {
+            background: #3A8DFF;
+            padding: 12px;
+            text-align: center;
+        }
+nav a {
+    margin: 0 10px;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white; /* chiaro e leggibile su sfondo blu */
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.2s ease, background 0.25s, box-shadow 0.25s;
+}
+
+nav a:hover {
+    background: #0A58CA; /* leggermente più scuro per evidenziare */
+    transform: scale(1.12);
+    color: white;
+    box-shadow: 0 0 6px rgba(0,0,0,.25);
+}
+
+nav a.active {
+    background: #0747A6; /* solo background più scuro, testo sempre bianco */
+    color: white;
+    transform: scale(1.12);
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+
+
+        /* ==================== TOP LAYOUT ==================== */
+.top-container {
+    display: grid;
+    grid-template-columns: 380px 1fr 380px;
+    gap: 80px;
+    max-width: 1700px;
+    margin: 40px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.side-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-box {
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 50px;
+}
+
+.media-box video {
+    width: 100%;
+    border: 4px solid #0A58CA;
+    border-radius: 10px;
+}
+.media-box img {
+    width: 100%;
+    border: 4px solid #005F8C; /* stesso bordo dei video */
+    border-radius: 10px;
+    display: block; /* evita spazi indesiderati sotto l'immagine */
+}
+
+.media-desc {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #00334d;
+}
+
+/* ==================== TABELLA ==================== */
+table {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    background: white;
+    border-collapse: collapse;
+    border: 3px solid #0A58CA;
+    box-shadow: 0 0 15px rgba(10,88,202,.25);
+    font-size: 1.15em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+th {
+    background: #0D6EFD;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 2px solid #0A58CA;
+    padding: 9px;
+    font-size: 0.94em;
+}
+
+td:nth-child(1), td:nth-child(2) {
+    background: #99CCFF;
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+}
+
+.matematica1::before { content: "📐 "; }
+.matematica2::before { content: "🧮 "; }
+.matematica3::before { content: "🔢 "; }
+.matematica4::before { content: "📏 "; }
+.matematica5::before { content: "📊 "; }
+.matematica::before { content: "📐 "; }
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: #0D6EFD;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Matematica</h1>
+    <p>Liceo Scientifico – Scienze Applicate</p>
+</header>
+
+<div class="hero">
+    <span class="hero-icon">📐</span>
+    Analizzare numeri e modelli per sviluppare logica e problem solving.
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="arte.html">Arte</a>
+    <a href="filosofia.html">Filosofia</a>
+    <a href="fisica.html">Fisica</a>
+    <a href="matematica.html" class="active">Matematica</a>
+    <a href="italiano.html">Italiano</a>
+    <a href="inglese.html">Inglese</a>
+    <a href="storia.html">Storia</a>
+    <a href="scienze.html">Scienze Naturali</a>
+    <a href="informatica.html">Informatica</a>
+    <a href="motorie.html">Scienze Motorie</a>
+    <a href="religione.html">Religione</a>
+    <a href="diritto.html">Diritto ed Economia</a>
+</nav>
+
+<div class="top-container">
+
+    <!-- ===== COLONNA SINISTRA ===== -->
+    <div class="side-column">
+<h3 class="column-title">ESPERIMENTI</h3>
+
+
+
+
+<div class="media-box">
+    <img src="MATE.jpg" alt="Processo">
+    <div class="media-desc">Formule Matematiche</div>
+</div>
+
+    </div>
+
+    <!-- ===== TABELLA CENTRALE ===== -->
+    <table>
+        <tr><th>Anno</th><th>Ore</th><th>Programma</th></tr>
+
+        <tr>
+            <td>I</td><td>2</td>
+            <td>
+                <span class="matematica1">Matematica</span>
+                <ul>
+                    <li>Introduzione all’algebra e alla geometria di base, sviluppo del pensiero logico.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>II</td><td>2</td>
+            <td>
+                <span class="matematica2">Matematica</span>
+                <ul>
+                    <li>Approfondimenti su funzioni, equazioni e geometria analitica, risoluzione di problemi pratici.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>III</td><td>3</td>
+            <td>
+                <span class="matematica3">Matematica</span>
+                <ul>
+                    <li>Algebra avanzata, studio delle funzioni e introduzione al calcolo differenziale.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>IV</td><td>3</td>
+            <td>
+                <span class="matematica4">Matematica</span>
+                <ul>
+                    <li>Analisi matematica, geometria tridimensionale e applicazioni, risoluzione di problemi complessi.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>V</td><td>3</td>
+            <td>
+                <span class="matematica5">Matematica</span>
+                <ul>
+                    <li>Approfondimenti su statistica, probabilità, calcolo integrale e preparazione a progetti finali.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- ===== COLONNA DESTRA ===== -->
+    <div class="side-column">
+<h3 class="column-title">ESPERIMENTI</h3>
+
+
+<div class="media-box">
+    <img src="MATE1.jpg" alt="Processo">
+    <div class="media-desc">Formule Matematiche</div>
+</div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 IIS “IPSAR Piranesi” – Liceo Scientifico Scienze Applicate
+</footer>
+
+</body>
+</html>
+
+
+

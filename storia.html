@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Storia – Liceo Scientifico Scienze Applicate</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: #f5efe6;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* ==================== HEADER ==================== */
+        header {
+            background: linear-gradient(45deg, #8B4513, #A0522D);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.7em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* ==================== HERO BAR ==================== */
+.hero {
+    background: linear-gradient(90deg, #F5E0C5, #D2A679);
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+    gap: 15px;
+}
+
+.hero-icon {
+    font-size: 2em;
+}
+
+        /* ==================== NAVBAR ==================== */
+        nav {
+            background: #D2A679;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 7px 14px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #4B2E1E;
+            border-radius: 5px;
+            display: inline-block;
+            transition: transform .2s, background .25s, box-shadow .25s;
+        }
+
+        nav a:hover {
+            background: #8B4513;
+            transform: scale(1.12);
+            color: white;
+            box-shadow: 0 0 6px rgba(0,0,0,.25);
+        }
+
+        nav a.active {
+            background: #A0522D;
+            color: white;
+            transform: scale(1.12);
+            box-shadow: 0 0 6px rgba(0,0,0,.3);
+        }
+
+        /* ==================== TOP LAYOUT ==================== */
+.top-container {
+    display: grid;
+    grid-template-columns: 380px 1fr 380px;
+    gap: 80px;
+    max-width: 1700px;
+    margin: 40px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.side-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-box {
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 50px;
+}
+
+.media-box video {
+    width: 100%;
+    border: 4px solid #8B4513;
+    border-radius: 10px;
+}
+
+.media-box img {
+    width: 100%;
+    border: 4px solid #005F8C; /* stesso bordo dei video */
+    border-radius: 10px;
+    display: block; /* evita spazi indesiderati sotto l'immagine */
+}
+.media-desc {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #4B2E1E;
+}
+
+/* ==================== TABELLA ==================== */
+table {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    background: white;
+    border-collapse: collapse;
+    border: 3px solid #8B4513;
+    box-shadow: 0 0 15px rgba(139,69,19,.25);
+    font-size: 1.15em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+th {
+    background: #A0522D;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 2px solid #8B4513;
+    padding: 9px;
+    font-size: 0.94em;
+}
+
+td:nth-child(1), td:nth-child(2) {
+    background: #F5E0C5;
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+}
+
+.storia::before {
+    content: "📜 ";
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Storia</h1>
+    <p>Liceo Scientifico – Scienze Applicate</p>
+</header>
+
+<div class="hero">
+    <span class="hero-icon">📜</span>
+    Comprendere il passato per interpretare il presente e la società.
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="arte.html">Arte</a>
+    <a href="filosofia.html">Filosofia</a>
+    <a href="fisica.html">Fisica</a>
+    <a href="matematica.html">Matematica</a>
+    <a href="italiano.html">Italiano</a>
+    <a href="inglese.html">Inglese</a>
+    <a href="storia.html" class="active">Storia</a>
+    <a href="scienze.html">Scienze Naturali</a>
+    <a href="informatica.html">Informatica</a>
+    <a href="motorie.html">Scienze Motorie</a>
+    <a href="religione.html">Religione</a>
+    <a href="diritto.html">Diritto ed Economia</a>
+</nav>
+
+<div class="top-container">
+
+    <!-- Colonna Sinistra -->
+    <div class="side-column">
+        <h3 class="column-title">STORIA</h3>
+<div class="media-box">
+    <img src="Storia.jpg" alt="Storia">
+    <div class="media-desc">Mappa</div>
+</div>
+
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="Roma.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Roma 3D</div>
+        </div>
+<div class="media-box">
+    <img src="Grecia.jpg" alt="Grecia">
+    <div class="media-desc">Grecia</div>
+</div>
+
+    </div>
+
+    <!-- TABELLA CENTRALE -->
+    <table>
+        <tr><th>Anno</th><th>Ore</th><th>Programma</th></tr>
+
+        <tr>
+            <td>I</td><td>3</td>
+            <td>
+                <span class="storia">Storia</span>
+                <ul>
+                    <li>Il mondo delle prime grandi civiltà</li>
+                    <li>Il mondo greco</li>
+                    <li>Il mondo romano: la Repubblica</li>
+                </ul>
+
+                <span class="geografia">Geografia</span>
+                <ul>
+                    <li>La scienza delle relazioni tra uomo e natura</li>
+                    <li>Terra e biodiversità</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>II</td><td>3</td>
+            <td>
+                <span class="storia">Storia</span>
+                <ul>
+                    <li>Il mondo romano: l'impero</li>
+                    <li>Il mondo tardo antico</li>
+                    <li>Il mondo dell'alto medioevo</li>
+                </ul>
+
+                <span class="geografia">Geografia</span>
+                <ul>
+                    <li>Globalizzazione</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>III</td><td>2</td>
+            <td>
+                <span class="storia">Storia</span>
+                <ul>
+                    <li>Il basso medioevo</li>
+                    <li>L'Europa nel mondo</li>
+                    <li>La riforma e le due Europe</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>IV</td><td>2</td>
+            <td>
+                <span class="storia">Storia</span>
+                <ul>
+                    <li>L'Europa tra potere assoluto e potere parlamentare</li>
+                    <li>Le rivoluzioni del Settecento</li>
+                    <li>Restaurazione, capitalismo e nazionalismi</li>
+                    <li>L'espansione coloniale e la crisi degli equilibri</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>V</td><td>2</td>
+            <td>
+                <span class="storia">Storia</span>
+                <ul>
+                    <li>Novecento: Prima guerra mondiale, totalitarismi</li>
+                    <li>Seconda guerra mondiale</li>
+                    <li>Guerra Fredda</li>
+                    <li>Mondo contemporaneo e Unione Europea</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Colonna Destra -->
+    <div class="side-column">
+        <h3 class="column-title">VERSO NOI</h3>
+<div class="media-box">
+    <img src="Piramide.jpg" alt="Piramide">
+    <div class="media-desc">Piramide</div>
+</div>
+
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="RLM.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Rita Levi-Montalcini, donne che hanno cambiato la storia</div>
+        </div>
+<div class="media-box">
+    <img src="Napoleone.jpg" alt="Napoleone">
+    <div class="media-desc">Napoleone</div>
+</div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 IIS “IPSAR Piranesi” – Liceo Scientifico Scienze Applicate
+</footer>
+
+</body>
+</html>
+
+

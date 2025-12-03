@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Filosofia – Liceo Scientifico Scienze Applicate</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #e6f3fb;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* ==================== HEADER ==================== */
+        header {
+            background: linear-gradient(45deg, #8C59C1, #6F3FA0);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.7em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* ==================== HERO BAR ==================== */
+.hero {
+    background: linear-gradient(90deg, #8C59C1, #6F3FA0);
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+    gap: 15px;
+}
+
+.hero-icon {
+    font-size: 2em;
+}
+
+        /* ==================== NAVBAR ==================== */
+nav {
+    background: #8C6FC3; /* viola medio visibile */
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white; /* testo sempre leggibile */
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.2s ease, background 0.25s, box-shadow 0.25s;
+}
+
+nav a:hover {
+    background: #6F3FA0; /* leggermente più scuro */
+    transform: scale(1.12);
+    color: white;
+    box-shadow: 0 0 6px rgba(0,0,0,.25);
+}
+
+nav a.active {
+    background: #5A2E85; /* ancora più scuro solo per il link attivo */
+    color: white;
+    transform: scale(1.12);
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+
+ 
+
+
+        /* ==================== TOP LAYOUT ==================== */
+.top-container {
+    display: grid;
+    grid-template-columns: 380px 1fr 380px;
+    gap: 80px;
+    max-width: 1700px;
+    margin: 40px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.side-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-box {
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 50px;
+}
+
+.media-box video {
+    width: 100%;
+    border: 4px solid #5A2E85;
+    border-radius: 10px;
+}
+
+.media-box img {
+    width: 100%;
+    border: 4px solid #005F8C; /* stesso bordo dei video */
+    border-radius: 10px;
+    display: block; /* evita spazi indesiderati sotto l'immagine */
+}
+
+.media-desc {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #00334d;
+}
+
+/* ==================== TABELLA ==================== */
+table {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    background: white;
+    border-collapse: collapse;
+    border: 3px solid #5A2E85;
+    box-shadow: 0 0 15px rgba(90,46,133,.25);
+    font-size: 1.15em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+th {
+    background: #6F3FA0;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 2px solid #5A2E85;
+    padding: 9px;
+    font-size: 0.94em;
+}
+
+td:nth-child(1), td:nth-child(2) {
+    background: #B399D6;
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+}
+
+.filosofia1::before { content: "📚 "; }
+.filosofia2::before { content: "🧠 "; }
+.filosofia3::before { content: "💭 "; }
+.filosofia4::before { content: "📝 "; }
+.filosofia5::before { content: "📖 "; }
+.filosofia::before { content: "📚 "; }
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: #6F3FA0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Filosofia</h1>
+    <p>Liceo Scientifico – Scienze Applicate</p>
+</header>
+
+<div class="hero">
+    <span class="hero-icon">📚</span>
+    Ragionare su vita, conoscenza e grandi domande dell’esistenza.
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="arte.html">Arte</a>
+    <a href="filosofia.html" class="active">Filosofia</a>
+    <a href="fisica.html">Fisica</a>
+    <a href="matematica.html">Matematica</a>
+    <a href="italiano.html">Italiano</a>
+    <a href="inglese.html">Inglese</a>
+    <a href="storia.html">Storia</a>
+    <a href="scienze.html">Scienze Naturali</a>
+    <a href="informatica.html">Informatica</a>
+    <a href="motorie.html">Scienze Motorie</a>
+    <a href="religione.html">Religione</a>
+    <a href="diritto.html">Diritto ed Economia</a>
+</nav>
+
+<div class="top-container">
+
+    <!-- ===== COLONNA SINISTRA ===== -->
+    <div class="side-column">
+<h3 class="column-title">AMORE PER LA SAPIENZA</h3>
+
+<div class="media-box">
+    <img src="Diogene1.jpg" alt="Diogene di Sinope">
+    <div class="media-desc">Diogene di Sinope</div>
+</div>
+
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="Socrate.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Socrate</div>
+        </div>
+
+<div class="media-box">
+    <img src="Diogene.jpg" alt="Diogene contro Alessandro Magno">
+    <div class="media-desc">Diogene contro Alessandro Magno</div>
+</div>
+
+    </div>
+
+    <!-- ===== TABELLA CENTRALE ===== -->
+    <table>
+        <tr><th>Anno</th><th>Ore</th><th>Programma</th></tr>
+
+        <tr>
+            <td>III</td><td>2</td>
+            <td>
+                <span class="filosofia1">Filosofia</span>
+                <ul>
+                    <li>Introduzione al pensiero filosofico e ai primi filosofi, sviluppo del ragionamento critico.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>IV</td><td>2</td>
+            <td>
+                <span class="filosofia2">Filosofia</span>
+                <ul>
+                    <li>Studi su etica, logica e morale, approfondimenti su filosofi classici e concetti fondamentali.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>V</td><td>3</td>
+            <td>
+                <span class="filosofia3">Filosofia</span>
+                <ul>
+                    <li>Filosofia moderna: pensatori illuministi, critica e analisi dei testi, discussioni e dibattiti.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- ===== COLONNA DESTRA ===== -->
+    <div class="side-column">
+<h3 class="column-title">AMORE PER LA SAPIENZA</h3>
+
+<div class="media-box">
+    <img src="Cartesio.jpg" alt="Cartesio">
+    <div class="media-desc">Cartesio</div>
+</div>
+
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="FilosofiaModerna.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Filosofia Moderna</div>
+        </div>
+<div class="media-box">
+    <img src="Libri.jpg" alt="Libri">
+    <div class="media-desc">Libri</div>
+</div>
+    </div></div>
+
+
+
+<footer>
+    © 2025 IIS “IPSAR Piranesi” – Liceo Scientifico Scienze Applicate
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+

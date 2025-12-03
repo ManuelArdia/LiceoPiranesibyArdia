@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Fisica – Liceo Scientifico Scienze Applicate</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #e6f3fb;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* ==================== HEADER ==================== */
+        header {
+            background: linear-gradient(45deg, #0077B6, #005F8C);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.7em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* ==================== HERO BAR ==================== */
+.hero {
+    background: linear-gradient(90deg, #b3e0f8, #0077B6); /* hero bar arancione chiaro */
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+    gap: 15px;
+}
+
+.hero-icon {
+    font-size: 2em;
+}
+
+        /* ==================== NAVBAR ==================== */
+        nav {
+            background: #b3e0f8;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 7px 14px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #004d66;
+            border-radius: 5px;
+            display: inline-block;
+            transition: transform 0.2s ease, background 0.25s, box-shadow 0.25s;
+        }
+
+        nav a:hover {
+            background: #0077B6;
+transform: scale(1.12);
+            color: white;
+box-shadow: 0 0 6px rgba(0,0,0,.25);
+        }
+
+        nav a.active {
+            background: #005F8C;
+            color: white;
+transform: scale(1.12);
+box-shadow: 0 0 6px rgba(0,0,0,.3);
+        }
+
+        /* ==================== TOP LAYOUT ==================== */
+.top-container {
+    display: grid;
+    grid-template-columns: 380px 1fr 380px; /* colonne laterali più larghe */
+    gap: 80px; /* più distanza tra video e tabella */
+    max-width: 1700px; /* allarga tutto il layout */
+    margin: 40px auto;
+    padding: 0 10px; /* avvicina i video ai margini */
+    box-sizing: border-box;
+        }
+
+        /* colonne laterali */
+        .side-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* CENTRA DAVVERO I VIDEO */
+        }
+
+        /* box video */
+        .media-box {
+            width: 100%;
+            max-width: 380px; /* video più grandi */
+            margin-bottom: 50px;
+        }
+
+        .media-box video {
+            width: 100%;
+border: 4px solid #005F8C; /* colore coerente con sito */
+            border-radius: 10px;
+        }
+
+        .media-desc {
+            text-align: center;
+            margin-top: 10px;
+    font-size: 1.15em; /* più grande */
+    font-weight: 600;            color: #00334d;
+        }
+
+        /* ==================== TABELLA ==================== */
+        table {
+            width: 100%;
+            max-width: 1050px; /* tabella più grande */
+            margin: 0 auto;
+            background: white;
+            border-collapse: collapse;
+            border: 3px solid #005F8C;
+            box-shadow: 0 0 15px rgba(0,95,140,.25);
+font-size: 1.15em;
+font-family: 'Open Sans', sans-serif;
+        }
+
+        th {
+            background: #0077B6;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            border: 2px solid #005F8C;
+            padding: 9px;
+            font-size: 0.94em;
+        }
+
+        td:nth-child(1), td:nth-child(2) {
+            background: #cce7f4;
+            font-weight: bold;
+            width: 80px;
+            text-align: center;
+        }
+.fisica1::before {
+    content: "⚡ "; /* 1° anno: elettricità e magnetismo */
+}
+
+.fisica2::before {
+    content: "🌊 "; /* 2° anno: onde */
+}
+
+.fisica3::before {
+    content: "💡 "; /* 3° anno: luce e energia */
+}
+
+.fisica4::before {
+    content: "🪐 "; /* 4° anno: fisica moderna / spazio */
+}
+
+.fisica5::before {
+    content: "🤖 "; /* 5° anno: progetti e robotica */
+}
+
+        .fisica::before {
+            content: "⚛️ ";
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            background: #005F8C;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fisica</h1>
+    <p>Liceo Scientifico – Scienze Applicate</p>
+</header>
+
+<div class="hero">
+    <span class="hero-icon">⚛️</span>
+    Studiare le leggi che governano l’universo.
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="arte.html">Arte</a>
+    <a href="filosofia.html">Filosofia</a>
+    <a href="fisica.html" class="active">Fisica</a>
+    <a href="matematica.html">Matematica</a>
+    <a href="italiano.html">Italiano</a>
+    <a href="inglese.html">Inglese</a>
+    <a href="storia.html">Storia</a>
+    <a href="scienze.html">Scienze Naturali</a>
+    <a href="informatica.html">Informatica</a>
+    <a href="motorie.html">Scienze Motorie</a>
+    <a href="religione.html">Religione</a>
+    <a href="diritto.html">Diritto ed Economia</a>
+</nav>
+
+<!-- ==================== CONTENUTO PRINCIPALE ==================== -->
+<div class="top-container">
+
+    <!-- ===== COLONNA SINISTRA ===== -->
+    <div class="side-column">
+<h3 class="column-title">ESPERIMENTI</h3>
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="RC.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">La fisica del tiro a giro</div>
+        </div>
+
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="Ventola.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Effetto Magnus</div>
+        </div>
+
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="Aereo.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Fisica dell'aereo e delle macchine di F1</div>
+        </div>
+
+    </div>
+
+    <!-- ===== TABELLA CENTRALE ===== -->
+    <table>
+        <tr><th>Anno</th><th>Ore</th><th>Programma</th></tr>
+
+        <tr>
+            <td>I</td><td>2</td>
+            <td>
+                <span class="fisica1">Fisica</span>
+                <ul>
+                    <li>Scopri le leggi fondamentali del movimento, esperimenti con oggetti di tutti i giorni, osservazioni su energia e forze.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>II</td><td>2</td>
+            <td>
+                <span class="fisica2">Fisica</span>
+                <ul>
+                    <li>Approfondisci elettricità e magnetismo, circuiti semplici, esperimenti con batterie e magneti, gioco con sensori digitali.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>III</td><td>3</td>
+            <td>
+                <span class="fisica3">Fisica</span>
+                <ul>
+                    <li>Onde, luce e suono, esperimenti con laser e onde sonore, scopri come funzionano strumenti e tecnologie quotidiane.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>IV</td><td>3</td>
+            <td>
+                <span class="fisica4">Fisica</span>
+                <ul>
+                    <li>Fisica moderna: relatività, particelle, esplorazione dello spazio, piccoli progetti di laboratorio su temi attuali.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>V</td><td>3</td>
+            <td>
+                <span class="fisica5">Fisica</span>
+                <ul>
+                    <li>Progetti e applicazioni pratiche: costruisci un prototipo, studia energia rinnovabile o robotica, prepara esperimenti da mostrare.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- ===== COLONNA DESTRA ===== -->
+    <div class="side-column">
+<h3 class="column-title">ESPERIMENTI</h3>
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="Risonanza.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Risonanza - Radio</div>
+        </div>
+
+        <div class="media-box">
+            <video autoplay loop muted controls>
+                <source src="Imbuto.mp4" type="video/mp4">
+            </video>
+            <div class="media-desc">Bernoulli</div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<footer>
+    © 2025 IIS “IPSAR Piranesi” – Liceo Scientifico Scienze Applicate
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
